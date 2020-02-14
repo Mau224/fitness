@@ -3,7 +3,7 @@
   src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
     url("../fonts/BebasNeue-Regular.woff") format("woff");
   font-display: optional;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -22,7 +22,7 @@
   src: url("../fonts/Roboto-Condensed.woff2") format("woff2"),
     url("../fonts/Roboto-Condensed.woff") format("woff");
   font-display: optional;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -45,7 +45,6 @@
 }
 
 body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
   font-display: optional;
@@ -62,9 +61,14 @@ a {
   color: white;
 }
 
+p {
+  margin: 0;
+}
+
 button {
   border: none;
   background: none;
+  outline: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -82,4 +86,14 @@ button {
 
 li {
   list-style: none;
+}
+
+h1 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+
+  color: #102654;
 }

@@ -1,1 +1,17 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "variable.scss";
 @import "global-style.scss";
+@import "header/man-nav.scss";
+@import "header/header-information.scss";
+@import "header/main-header.scss";
+@import "header/header.scss";
+@import "gym/gym.scss";
+@import "advanatges/advantages.scss";
+@import "container.scss";
+@import "tickets/tickets.scss";
+@import "games/games.scss";
+@import "slider/trainers.scss";
+@import "action/action.scss";
+@import "reviews/reviews.scss";
+@import "contact/contact.scss";
+@import "footer/footer.scss";

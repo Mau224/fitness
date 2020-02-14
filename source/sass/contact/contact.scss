@@ -1,0 +1,304 @@
+.contact__input {
+  width: 190px;
+  font-size: 13px;
+  color: #fff;
+  padding: 6px 0 5px 0;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  background: 0 0;
+  margin-right: 27px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.contact__input:hover {
+  border: 1px solid #ffffff;
+}
+
+.contact__input:active {
+  border: 1px solid #ffffff;
+}
+
+.contact__input:disabled {
+  border: 1px solid red;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  margin-bottom: -13px;
+}
+
+.contact__lesson {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  background-color: #102654;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.contact__lesson-title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: bold;
+  padding-top: 62px;
+  padding-right: 120px;
+  color: #ffffff;
+}
+
+.contact__button {
+  width: 410px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 3px solid white;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.contact__button:hover {
+  color: #eecccc;
+}
+
+.contact__button:active {
+  color: #eecccc;
+}
+
+.contact__button:disabled {
+  opacity: 0.3;
+}
+
+.contact__form {
+  padding-top: 34px;
+  padding-bottom: 70px;
+  margin-left: -38px;
+}
+
+.contact__wrapper {
+  width: 100%;
+  display: flex;
+  border: 1px solid #74819c;
+}
+
+.contact__info-header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #102654;
+}
+
+.contact__info-content {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #102654;
+}
+
+.contact__info-first {
+  display: flex;
+  flex-direction: column;
+  padding-right: 62px;
+  border-right: 1px solid #74819c;
+}
+
+.contact__info-second {
+  padding-left: 60px;
+  padding-right: 50px;
+}
+
+.contact__info-container {
+  display: flex;
+  padding-left: 124px;
+}
+
+.contact__info-title {
+  padding-left: 120px;
+  padding-top: 29px;
+  padding-bottom: 0;
+  font-size: 49px;
+}
+
+.contact__first-block {
+  padding-bottom: 21px;
+}
+
+.contact__info-block {
+  width: 50%;
+}
+
+
+@media (max-width: $tablet-width) {
+  .contact__lesson {
+    width: 100%;
+    padding-bottom: 23px;
+  }
+
+  .contact__info-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__info-container {
+    margin-bottom: 40px;
+    padding-left: 133px;
+  }
+
+  .contact__lesson-title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-left: -68px;
+    margin-top: 7px;
+  }
+
+  .contact__form {
+    padding-top: 34px;
+    padding-bottom: 70px;
+    margin-left: -65px;
+  }
+
+  .contact__input {
+    width: 206px;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 6px 0 5px;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    background: 0 0;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+  }
+
+  .contact__button {
+    width: 471px;
+    margin-left: 46px;
+  }
+
+  .contact__info-title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-left: 14px;
+    margin-top: 39px;
+  }
+
+  .contact__info-header {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+
+  .contact__info-content {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .contact__info-first {
+    padding-right: 47px;
+  }
+
+  .contact__info-second {
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact__lesson-title {
+    font-size: 32px;
+    margin-left: -51px;
+    padding: 55px 0 0;
+    margin-bottom: -4px;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contact__input {
+    margin-right: 0;
+    margin-left: -2px;
+    margin-bottom: 34px;
+    width: 290px;
+  }
+
+  .contact__button {
+    width: 290px;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  .contact__lesson {
+    padding-bottom: 85px;
+  }
+
+  .contact__info-container {
+    flex-direction: column;
+    padding-left: 0;
+    margin-left: 15px;
+  }
+
+  .contact__info-second {
+    padding: 0;
+  }
+
+  .contact__info-first {
+    padding-bottom: 20px;
+    border-right: none;
+  }
+
+  .contact__info-title {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 1px;
+    margin-bottom: 35px;
+  }
+
+  .contact__info-block {
+    margin-bottom: 16px;
+  }
+}

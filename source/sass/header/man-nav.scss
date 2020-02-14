@@ -1,0 +1,93 @@
+.main-nav__logo {
+  width: 89px;
+  height: 20px;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  padding-left: 103px;
+  color: #ffffff;
+}
+
+.main-nav__logo:hover {
+  opacity: 0.3;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__logo:disabled {
+  opacity: 0.5;
+}
+
+.main-nav__phone {
+  height: 20px;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  padding-right: 103px;
+
+  color: #ffffff;
+}
+
+.main-nav__phone:hover {
+  opacity: 0.3;
+}
+
+.main-nav__phone:active {
+  opacity: 0.3;
+}
+
+.main-nav__phone:disabled {
+  opacity: 0.5;
+}
+
+.main-nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__phone {
+    font-size: 24px;
+    line-height: 24px;
+    padding-right: 44px;
+  }
+
+  .main-nav__logo {
+    padding-left: 45px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .main-nav {
+    padding-top: 39px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__phone {
+    font-size: 20px;
+    padding-right: 15px;
+  }
+
+  .main-nav__logo {
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-nav {
+    padding-top: 17px;
+  }
+}

@@ -1,0 +1,154 @@
+.header-information__city {
+  width: 90px;
+  height: 37px;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: right;
+  margin: 0 0 25px 209px;
+}
+
+
+.header-information__fitness {
+  width: 298px;
+  height: 191px;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+
+  color: #ffffff;
+  margin: 0;
+  margin-left: 0;
+  margin-bottom: 80px;
+}
+
+.header-information__gym {
+  width: 125px;
+  height: 51px;
+  position: absolute;
+  left: -91px;
+  top: 190px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* or 21px */
+
+  align-items: center;
+  text-align: right;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-information__subscription {
+  width: 230px;
+  height: 9px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  padding: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 63px;
+}
+
+.header-information__subscription:hover {
+  color: #eecccc;
+}
+
+.header-information__subscription:active {
+  color: #eecccc;
+}
+
+.header-information__subscription:disabled {
+  opacity: 0.3;
+}
+
+.header-information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 117px;
+  position: relative;
+  margin-right: 58px;
+  margin-left: 94px;
+}
+
+@media (max-width: $tablet-width) {
+  .header-information__city {
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 205px;
+  }
+
+  .header-information__fitness {
+    font-size: 86px;
+    line-height: 86px;
+    margin: 0 0 22px;
+  }
+
+  .header-information__gym {
+    left: -41px;
+    top: 153px;
+  }
+
+  .header-information {
+    margin: 55px 21px 106px 24px;
+  }
+
+  .header-information__subscription {
+    width: 183px;
+    padding: 21px 0;
+    margin-left: 108px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-information__city {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .header-information__fitness {
+    font-size: 78px;
+    line-height: 78px;
+    margin: 0 0 7px;
+  }
+
+  .header-information__subscription {
+    width: 290px;
+    margin-left: 0;
+  }
+
+  .header-information {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header-information__gym {
+    left: -10px;
+    top: 142px;
+  }
+
+  .header-information {
+    margin-bottom: 80px;
+  }
+}

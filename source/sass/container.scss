@@ -1,8 +1,31 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  //max-width: 1366px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    width: 100%;
+    max-width: 1199px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

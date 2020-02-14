@@ -1,0 +1,309 @@
+.action__sells-year {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 156%;
+  margin-left: 45px;
+  margin-top: 33px;
+  color: #ffffff;
+}
+
+.action__title {
+  text-align: center;
+  margin-bottom: 53px;
+  margin-top: 60px;
+  font-size: 49px;
+}
+
+.action__sells-price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 156%;
+  margin-left: 45px;
+  margin-right: 85px;
+  margin-top: -24px;
+  color: #ffffff;
+}
+
+.action__sells-info {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-left: 48px;
+}
+
+.action__link-block {
+  width: 79px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 45px;
+  margin-bottom: 45px;
+  border-bottom: 2px solid white;
+}
+
+.action__link-block:hover {
+  color: #eecccc;
+}
+
+.action__link-block:active {
+  color: #eecccc;
+}
+
+.action__link-block:disabled {
+  opacity: 0.3;
+}
+
+.action__left-column {
+  display: flex;
+  background: #ed0233;
+}
+
+.action__wrapper {
+  display: flex;
+}
+
+.action__sells {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 9px;
+}
+
+.action {
+  margin-bottom: 75px;
+}
+
+.action__item-header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150px;
+  margin: 0;
+  margin-top: -37px;
+  color: #1c3374;
+  margin-left: 29px;
+}
+
+.action__item-info {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: -50px;
+  color: #1c3374;
+  margin-left: 29px;
+}
+
+.action__item-link {
+  width: 68px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1c3374;
+  margin-top: 69px;
+  margin-left: 31px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1c3374;
+}
+
+.action__item-link:hover {
+  color: #eecccc;
+}
+
+.action__item-link:active {
+  color: #eecccc;
+}
+
+.action__item-link:disabled {
+  opacity: 0.3;
+}
+
+
+.action__advantage-item {
+  width: 550px;
+  border: 6px solid transparent;
+  border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+
+  &--top {
+    margin-bottom: 38px;
+  }
+}
+
+.action__right-column {
+  margin-left: 40px;
+}
+
+.action__photo-wrapper {
+  height: 100%;
+}
+
+.action__photo {
+  display: block;
+  font-size: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .action__wrapper {
+    flex-direction: column;
+  }
+
+  .action__advantage-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .action__advantage-item {
+    width: 313px;
+    margin: 0;
+  }
+
+  .action__right-column {
+    margin: 0;
+  }
+
+  .action__photo {
+    width: 399px;
+  }
+
+  .action__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 41px;
+  }
+
+  .action__item-link {
+    margin-bottom: 28px;
+
+    &--left-block {
+      margin-top: 47px;
+    }
+  }
+
+  .action {
+    margin-bottom: 64px;
+  }
+
+  .action__sells-info {
+    margin-left: 46px;
+  }
+
+  .action__item-info {
+    width: 153px;
+
+    &--tablet-width {
+      width: 244px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .action__left-column {
+    flex-direction: column;
+  }
+
+  .action__photo {
+    width: 290px;
+    height: 299px;
+  }
+
+  .action__advantage-block {
+    flex-direction: column;
+  }
+
+  .action__advantage-item {
+    width: 277px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+
+  .action__item-header {
+    text-align: center;
+    margin-left: 0;
+    margin-top: -26px;
+    margin-bottom: -23px;
+  }
+
+  .action__item-info {
+    margin-left: 0;
+    text-align: center;
+    margin-top: -28px;
+    margin-bottom: -21px;
+
+    &--tablet-width {
+      width: 159px;
+    }
+  }
+
+  .action__item-link {
+    margin-left: 0;
+    margin-bottom: 42px;
+
+    &--mabail-margin {
+      margin-top: 47px;
+    }
+  }
+
+  .action__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 44px;
+  }
+
+  .action__block-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action__sells-year {
+    margin-left: 5px;
+    margin-top: 34px;
+  }
+
+  .action__sells-price {
+    margin-left: 13px;
+    margin-right: 0;
+    margin-bottom: -6px;
+  }
+
+  .action__sells-info {
+    margin-left: 12px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .action__link-block {
+    margin-left: 106px;
+    margin-top: 31px;
+  }
+
+  .action {
+    margin-bottom: 11px;
+  }
+}

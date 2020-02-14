@@ -5,8 +5,10 @@
     "Firefox ESR"
   ],
   "dependencies": {
+    "bemlint": "^1.7.0",
     "del": "^5.1.0",
     "gulp-webp": "^4.0.1",
+    "normalize.css": "^8.0.1",
     "pump": "^3.0.0",
     "svgxuse": "^1.2.6"
   },
