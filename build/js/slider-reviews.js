@@ -1,22 +1,37 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+'use strict';
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var next = document.getElementById('next');
+var prew = document.getElementById('prew');
+
+var slides = document.getElementsByClassName('reviews__slide');
+for (var i = 0; i < slides.length; i++) {
+  slides[i].style.zIndex = slides.length - i;
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("reviews__slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+next.onclick = function () {
+  var activeEl = document.querySelector('.active');
+  if (activeEl.nextElementSibling) {
+    activeEl.previousElementSibling.style.display = 'none';
+    activeEl.classList.remove('active');
+    activeEl.nextElementSibling.classList.add('active');
+    this.classList.remove('no_active');
+    prew.classList.remove('no_active');
+    if (!activeEl.nextElementSibling.nextElementSibling) {
+      this.classList.add('no_active');
+    }
   }
-  slides[slideIndex-1].style.display = "block";
-}
+};
 
+prew.onclick = function () {
+  var activeEl = document.querySelector('.active');
+  if (activeEl.previousElementSibling) {
+    activeEl.previousElementSibling.style.display = 'block';
+    activeEl.classList.remove('active');
+    activeEl.previousElementSibling.classList.add('active');
+    this.classList.remove('no_active');
+    next.classList.remove('no_active');
+    if (!activeEl.previousElementSibling.previousElementSibling) {
+      this.classList.add('no_active');
+    }
+  }
+};

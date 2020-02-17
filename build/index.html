@@ -5,13 +5,12 @@
   <title>Supergym</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <!--Хедер-->
@@ -30,8 +29,10 @@
       </div>
       <div class="main-header__photo">
         <picture>
-          <source type="image/webp" media="(max-width: 1200px)" srcset="img/trainer.webp 1x, img/trainer@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/trainer.webp 1x, img/trainer@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/trainer-tablet.webp 1x, img/trainer-tablet@2x.webp 2x">
 
+          <source media="(min-width: 768px)" srcset="img/trainer-tablet.jpg 1x, img/trainer-tablet@2x.jpg 2x">
           <img class="main-header__photo-trainer" src="img/trainer.jpg" srcset="img/trainer@2x.jpg" width="500" height="556" alt="фотография тренера">
         </picture>
       </div>
@@ -55,25 +56,30 @@
           <h1 class="gym__title-header">Тренажерный зал</h1>
           <b class="gym__title-info">Просторный зал площадью 900 кв/м</b>
           <p class="gym__title-text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p class="gym__title-text gym__title-text--tablet gym__title-text--bottom-desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <p class="gym__title-text gym__title-text--tablet gym__title-text--bottom">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="gym__photo-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 1200px)" srcset="img/gym.webp 1x,img/gym@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobail.webp 1x,img/gym-mobail@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobail.webp 1x, img/gym-mobail@2x.webp 2x">
 
-            <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x,img/gym-tablet@2x.jpg 2x">
-            <source media="(max-width: 767px)" srcset="img/gym-mobail.jpg 1x,img/gym-mobail@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="img/gym-mobail.jpg 1x, img/gym-mobail@2x.jpg 2x">
             <img class="gym__main-photo" src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="401" alt="фото зала">
           </picture>
         </div>
         <div class="gym__video-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 1200px)" srcset="img/video-3.webp 1x, img/video-3@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-3.webp 1x, img/video-3@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-3-tablet.webp 1x, img/video-3-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/video-3-mobail.webp 1x, img/video-3-mobail@2x.webp 2x">
 
+            <source media="(min-width: 768px)" srcset="img/video-3-tablet.png 1x, img/video-3-tablet@2x.png 2x">
+            <source media="(max-width: 767px)" srcset="img/video-3-mobail.png 1x, img/video-3-mobail@2x.png 2x">
             <img class="gym__main-video" src="img/video-3.png" srcset="img/video-3@2x.png" width="364" height="228" alt="видео">
           </picture>
-          <img class="gym__video-back" src="img/video.png" width="364" height="228" alt="фон">
+          <div class="gym__video-back"></div>
         </div>
       </div>
     </section>
@@ -113,7 +119,13 @@
             <button type="button" class="tickets__link-subscription">купить абонемент</button>
           </li>
         </ul>
-        <img class="tickets__background-circle" src="img/circle.png" width="287" height="494" alt="кружки">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/circle.webp 1x, img/circle@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/circle-tablet.webp 1x, img/circle-tablet@2x.webp 2x">
+
+          <source media="(min-width: 768px)" srcset="img/circle-tablet.png 1x, img/circle-tablet@2x.png 2x">
+          <img class="tickets__background-circle" src="img/circle.png" srcset="img/circle@2x.png" width="287" height="494" alt="кружки">
+        </picture>
       </div>
     </div>
   </section>
@@ -145,8 +157,12 @@
             </div>
           </div>
           <picture>
-            <source type="image/webp" media="(max-width: 1200px)" srcset="img/game-photo.webp 1x, img/game-photo@2x.webp 2x">
-            <source media="(max-width: 1199px)" srcset="img/game-photo-tablet.jpg 1x, img/game-photo-tablet@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/game-photo.webp 1x, img/game-photo@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/game-photo-tablet.webp 1x, img/game-photo-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/game-photo-mobail.webp 1x, img/game-photo-mobail@2x.webp 2x">
+
+            <source media="(min-width: 768px)" srcset="img/game-photo-tablet.jpg 1x, img/game-photo-tablet@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="img/game-photo-mobail.jpg 1x, img/game-photo-mobail@2x.jpg 2x">
             <img class="games__picture" src="img/game-photo.jpg" srcset="img/game-photo@2x.jpg" width="660" height="500" alt="фото из блока игр">
           </picture>
         </div>
@@ -157,65 +173,191 @@
     <section class="trainers">
       <div class="trainers__main-container">
         <h1 class="trainers__title">Тренеры</h1>
-          <div class="trainers">
-            <div class="trainers__container">
-            <div class="trainers__wrapper">
-              <div class="trainers__item">
-                <div class="trainers__block-popup">
-                  <img class="trainers__photo" src="img/anna.jpg" width="260" height="294">
-                  <p class="trainers__footer-text">Анна Павлова</p>
-                  <div class="trainers__block-content">
-                    <p class="trainers__block-header">Александр Пашков</p>
-                    <p class="trainers__block-info">CrossFit</p>
-                    <p class="trainers__block-text">Certified Level 3 Trainer</p>
-                    <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
-                    <p class="trainers__block-text">Опыт — 6 лет</p>
-                  </div>
-                </div>
+        <div class="trainers__slider">
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
               </div>
-              <div class="trainers__item">
-                <div class="trainers__block-popup">
-                  <img class="trainers__photo" src="img/anna.jpg" width="260" height="294">
-                  <p class="trainers__footer-text">Анна Павлова</p>
-                  <div class="trainers__block-content">
-                    <p class="trainers__block-header">Александр Пашков</p>
-                    <p class="trainers__block-info">CrossFit</p>
-                    <p class="trainers__block-text">Certified Level 3 Trainer</p>
-                    <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
-                    <p class="trainers__block-text">Опыт — 6 лет</p>
-                  </div>
-                </div>
-              </div>
-              <div class="trainers__item">
-                <div class="trainers__block-popup">
-                  <img class="trainers__photo" src="img/anna.jpg" width="260" height="294">
-                  <p class="trainers__footer-text">Анна Павлова</p>
-                  <div class="trainers__block-content">
-                    <p class="trainers__block-header">Александр Пашков</p>
-                    <p class="trainers__block-info">CrossFit</p>
-                    <p class="trainers__block-text">Certified Level 3 Trainer</p>
-                    <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
-                    <p class="trainers__block-text">Опыт — 6 лет</p>
-                  </div>
-                </div>
-              </div>
-              <div class="trainers__item">
-                <div class="trainers__block-popup">
-                  <img class="trainers__photo" src="img/anna.jpg" width="260" height="294">
-                  <p class="trainers__footer-text">Анна Павлова</p>
-                  <div class="trainers__block-content">
-                    <p class="trainers__block-header">Александр Пашков</p>
-                    <p class="trainers__block-info">CrossFit</p>
-                    <p class="trainers__block-text">Certified Level 3 Trainer</p>
-                    <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
-                    <p class="trainers__block-text">Опыт — 6 лет</p>
-                  </div>
-                </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
               </div>
             </div>
           </div>
-            <a class="trainers__control trainers__control--left trainers__control-left" href="#" role="button"></a>
-            <a class="trainers__control trainers__control--right trainers__control-right" href="#" role="button"></a>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <div class="trainers__slider-item">
+            <div class="trainers__block-popup">
+              <div class="trainers__photo-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mari.webp 1x, img/mari@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mari-tablet.webp 1x, img/mari-tablet@2x.webp 2x">
+                  <!--                <source type="image/webp" media="(max-width: 767px)" srcset="img/mari-mobail.webp 1x, img/mari-mobail@2x.webp 2x">-->
+
+                  <source media="(min-width: 768px)" srcset="img/mari-tablet.jpg 1x, img/mari-tablet@2x.jpg 2x">
+                  <!--                <source media="(max-width: 767px)" srcset="img/mari-mobail.jpg 1x, img/mari-mobail@2x.jpg 2x">-->
+                  <img class="trainers__photo" src="img/mari.jpg" srcset="img/mari@2x.jpg" width="260" height="294" alt="фотография тренера">
+                </picture>
+              </div>
+              <p class="trainers__footer-text">Анна Павлова</p>
+              <div class="trainers__block-content">
+                <p class="trainers__block-header">Александр Пашков</p>
+                <p class="trainers__block-info">CrossFit</p>
+                <p class="trainers__block-text">Certified Level 3 Trainer</p>
+                <p class="trainers__block-text">Победитель чемпионата<br>России по CrossFit</p>
+                <p class="trainers__block-text">Опыт — 6 лет</p>
+              </div>
+            </div>
+          </div>
+          <button type="button" name="arrow"></button>
+          <button type="button" name="arrow"></button>
         </div>
       </div>
     </section>
@@ -229,7 +371,7 @@
             <div class="advantages__first-block">
               <div class="advantages__item advantages__item--left">
                 <div class="advantages__top-block">
-                  <img class="advantages__number_photo" src="img/icon-900.svg" width="102" height="53" alt="900">
+                  <img class="advantages__number-photo" src="img/icon-900.svg" width="102" height="53" alt="900">
                   <p class="advantages__info">кв/м</p>
                 </div>
                 <div class="advantages__left-footer">
@@ -239,7 +381,7 @@
               </div>
               <div class="advantages__item">
                 <div class="advantages__top-block">
-                  <img class="advantages__number_photo" src="img/icon-70.svg" width="72" height="49" alt="70">
+                  <img class="advantages__number-photo advantages__number-photo--two-num" src="img/icon-70.svg" width="70" height="49" alt="70">
                   <p class="advantages__info">машин</p>
                 </div>
                 <div class="advantages__right-footer">
@@ -256,18 +398,18 @@
             <div class="advantages__second-block">
               <div class="advantages__item advantages__item--left-element advantages__item--bottom advantages__item--left">
                 <div class="advantages__bottom-block">
-                  <img class="advantages__number_photo" src="img/icon-350.svg" width="102" height="53" alt="350">
+                  <img class="advantages__number-photo" src="img/icon-350.svg" width="102" height="53" alt="350">
                   <p class="advantages__info">мест</p>
                 </div>
-                <div class="advantages__left-footer">
+                <div class="advantages__left-footer advantages__left-footer--mr-bottom">
                   <p class="advantages__header advantages__header--left-bottom">Комфорт</p>
                   <p class="advantages__text">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </div>
               <div class="advantages__item advantages__item--bottom advantages__item--right-element">
                 <div class="advantages__bottom-block">
-                  <img class="advantages__number_photo" src="img/icon-+5.svg" width="70" height="49" alt="+5">
-                  <p class="advantages__info">лет</p>
+                    <img class="advantages__number-photo advantages__number-photo--two-num" src="img/icon-+5.svg" width="70" height="49" alt="+5">
+                  <p class="advantages__info advantages__info--mr-mobail">лет</p>
                 </div>
                 <div class="advantages__right-footer">
                   <p class="advantages__header advantages__header--right advantages__header--right-bottom">Тренерский опыт</p>
@@ -295,8 +437,12 @@
           </div>
           <div class="action__photo-container">
             <picture>
-              <source type="image/webp" srcset="img/girl.webp 1x, img/girl@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/girl.webp 1x, img/girl@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/girl-tablet.webp 1x, img/girl-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/girl-mobail.webp 1x, img/girl-mobail@2x.webp 2x">
 
+              <source media="(min-width: 768px)" srcset="img/girl-tablet.jpg 1x, img/girl-tablet@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/girl-mobail.jpg 1x, img/girl-mobail@2x.jpg 2x">
               <img class="action__photo" src="img/girl.jpg" srcset="img/girl@2x.jpg" width="280" height="462" alt="девушка с блока акции">
             </picture>
           </div>
@@ -322,23 +468,37 @@
 <!--Отзывы-->
     <section class="reviews">
       <h1 class="reviews__title">Отзывы</h1>
-      <div class="reviews__container">
-        <div class="reviews__slide fade">
-          <img class="reviews__icon" src="img/avatar.png" width="80" height="80" alt="аватарка">
+      <ul class="reviews__container" id="slider">
+        <li class="reviews__slide">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/avatar-mobail.webp 1x, img/avatar-mobail@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/avatar-mobail.png 1x, img/avatar-mobail@2x.png 2x">
+            <img class="reviews__icon" src="img/avatar.png" srcset="img/avatar@2x.png" width="80" height="80" alt="аватарка">
+          </picture>
           <div class="reviews__text-block">
             <p class="reviews__header">Анна Орлова</p>
             <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
-        </div>
-        <div class="reviews__slide fade">
-          <img class="reviews__icon" src="img/avatar.png" width="80" height="80" alt="аватарка">
+        </li>
+        <li class="reviews__slide active">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/avatar.webp 1x, img/avatar@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/avatar-mobail.webp 1x, img/avatar-mobail@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/avatar-mobail.png 1x, img/avatar-mobail@2x.png 2x">
+            <img class="reviews__icon" src="img/avatar.png" srcset="img/avatar@2x.png" width="80" height="80" alt="аватарка">
+          </picture>
           <div class="reviews__text-block">
             <p class="reviews__header">Анна Орлова</p>
             <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
-        </div>
-        <button type="button" class="reviews__btn reviews__prev" onclick="plusSlides(-1)"></button>
-        <button type="button" class="reviews__btn reviews__next" onclick="plusSlides(1)"></button>
+        </li>
+      </ul>
+      <div class="reviews__arrows">
+        <button type="button" name="next" class="reviews__arrow reviews__next" id="next"></button>
+        <button type="button" name="prev" class="reviews__arrow reviews__prev" id="prew"></button>
       </div>
     </section>
     <!--/Отзывы-->
@@ -349,10 +509,12 @@
         <div class="contact__lesson">
           <p class="contact__lesson-title">БЕСПЛАТНОЕ занятие</p>
           <form action="#" method="#" class="contact__form">
-              <label></label>
-              <input class="contact__input" type="text" name="last_name" placeholder="Имя">
-              <label></label>
-              <input class="contact__input" type="text" name="phone_name" placeholder="Телефон">
+            <div class="contact__input-container">
+              <label for="phone"></label>
+              <input class="contact__input" id="phone" type="text" name="last_name" placeholder="Имя">
+              <label for="name"></label>
+              <input class="contact__input" id="name" type="text" name="phone_name" placeholder="Телефон" pattern="2[0-9]{3}-[0-9]{3}">
+            </div>
             <button type="submit" class="contact__button">отправить</button>
           </form>
           
@@ -402,17 +564,19 @@
 
       </div>
       <div class="footer__social">
-        <a href="#"><img class="footer__icon" src="img/vk.svg" width="24" height="13" alt="вк"></a>
-        <a href="#"><img class="footer__icon footer__icon--circle" src="img/inst.svg" width="24" height="24" alt="инстаграмм"></a>
-        <a href="#"><img class="footer__icon" src="img/fb.svg" width="12" height="24" alt="фейсбук"></a>
+        <a href="#" class="footer__icon footer__icon--vk"><img src="img/vk.svg" width="24" height="13" alt="вк"></a>
+        <a href="#" class="footer__icon"><img src="img/inst.svg" width="24" height="24" alt="инстаграмм"></a>
+        <a href="#" class="footer__icon"><img src="img/fb.svg" width="12" height="24" alt="фейсбук"></a>
       </div>
     </div>
   </footer>
   </div>
 <!-- /Конец общего контейнера-->
-<script src="js/slider.min.js"></script>
-<script src="js/slider-reviews.min.js"></script>
-<script src="js/picturefill.min.js"></script>
-<script src="js/svgxuse.min.js" defer=""></script>
+<script defer="" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script defer="" src="js/slick.min.js"></script>
+<script defer="" src="js/slider.min.js"></script>
+<script defer="" src="js/slider-reviews.min.js"></script>
+<!--<script src="js/picturefill.min.js"></script>-->
+<script defer="" src="js/svgxuse.min.js"></script>
 </body>
 </html>

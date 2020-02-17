@@ -72,6 +72,7 @@
   z-index: 20;
   width: auto;
   padding-left: 0;
+  overflow-x: auto;
 }
 
 .tickets__day-item {
@@ -223,7 +224,9 @@
   }
 
   .tickets__background-circle {
-    top: 1436px;
+    top: 1465px;
+    width: 346px;
+    height: 437px;
   }
 
   .tickets__main-container {

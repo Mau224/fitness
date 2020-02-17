@@ -159,8 +159,11 @@
   }
 
   .footer__icon {
-    width: 27px;
-    height: 27px;
     margin-right: 33px;
+
+    &--vk {
+      width: 32px;
+      height: 17px;
+    }
   }
 }
