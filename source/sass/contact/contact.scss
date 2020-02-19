@@ -105,7 +105,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
 }
 
 .contact__wrapper {
@@ -180,7 +179,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 31px;
+    padding-bottom: 36px;
   }
 
   .contact__wrapper {
@@ -308,5 +307,9 @@
   .contact__info-block {
     margin-bottom: 0;
     padding-bottom: 35px;
+  }
+
+  .contact__input-container {
+    flex-direction: column;
   }
 }

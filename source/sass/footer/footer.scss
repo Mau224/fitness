@@ -122,15 +122,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 150px;
-    justify-content: flex-start;
-    align-content: flex-end;
+    margin: 0;
+    width: 290px;
+    //align-content: flex-end;
   }
 
   .footer__wrapper {
     width: 320px;
     flex-direction: column;
-    align-content: flex-end;
-    margin-left: 73px;
     margin-top: 3px;
   }
 
@@ -149,13 +148,12 @@
     line-height: 20px;
     padding-bottom: 18px;
     margin: 0;
-    margin-right: 92px;
   }
 
   .footer__social {
     width: 100%;
     justify-content: flex-start;
-    margin: -18px 127px 18px 20px;
+    margin-left: 35px;
   }
 
   .footer__icon {

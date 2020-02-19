@@ -5,20 +5,17 @@ $('.trainers__slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 4,
+  adaptiveHeight: true,
   slidesToScroll: 4,
+  variableWidth: true,
   responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-      }
-    },
     {
       breakpoint: 1199,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
+        infinite: true,
+        adaptiveHeight: true,
         variableWidth: true
       }
     },
@@ -26,11 +23,14 @@ $('.trainers__slider').slick({
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
+        infinite: true,
+        variableWidth: false,
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
+});
+
+$('.reviews__container').slick({
+  speed: 300
 });

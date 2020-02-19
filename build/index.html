@@ -104,12 +104,12 @@
             <p class="tickets__item-price">5000<svg class="tickets__item-icon" width="30" height="42"><use xlink:href="img/sprite.svg#icon-rub"></use></svg></p>
             <button type="button" class="tickets__link-subscription">купить абонемент</button>
           </li>
-          <li class="tickets__day-item">
+          <li class="tickets__day-item tickets__day-item--active">
             <p class="tickets__item-title">Дневной</p>
             <p class="tickets__item-info">с 8:00 до 17:00</p>
             <p class="tickets__item-background">1700</p>
             <p class="tickets__item-price">1700<svg class="tickets__item-icon" width="30" height="42"><use xlink:href="img/sprite.svg#icon-rub"></use></svg></p>
-            <button type="button" class="tickets__link-subscription">купить абонемент</button>
+            <button type="button" class="tickets__link-subscription tickets__link-subscription--active">купить абонемент</button>
           </li>
           <li class="tickets__day-item">
             <p class="tickets__item-title">Полный день</p>
@@ -371,7 +371,13 @@
             <div class="advantages__first-block">
               <div class="advantages__item advantages__item--left">
                 <div class="advantages__top-block">
-                  <img class="advantages__number-photo" src="img/icon-900.svg" width="102" height="53" alt="900">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/900-small-img.webp 1x, img/900-small-image@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/900-image.webp 1x, img/900-image@2x.webp 2x">
+
+                    <source media="(min-width: 320px)" srcset="img/900-small-img.jpg 1x, img/900-small-image@2x.jpg 2x">
+                    <img class="advantages__number-photo" src="img/900-image.jpg" srcset="img/900-image@2x.jpg" width="102" height="53" alt="900">
+                  </picture>
                   <p class="advantages__info">кв/м</p>
                 </div>
                 <div class="advantages__left-footer">
@@ -381,7 +387,13 @@
               </div>
               <div class="advantages__item">
                 <div class="advantages__top-block">
-                  <img class="advantages__number-photo advantages__number-photo--two-num" src="img/icon-70.svg" width="70" height="49" alt="70">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/70-small-img.webp 1x, img/70-small-img@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/70-image.webp 1x, img/70-image@2x.webp 2x">
+
+                    <source media="(min-width: 320px)" srcset="img/70-small-img.jpg 1x, img/70-small-img@2x.jpg 2x">
+                    <img class="advantages__number-photo advantages__number-photo--two-num" src="img/70-image.jpg" srcset="img/70-image@2x.jpg" width="70" height="49" alt="70">
+                  </picture>
                   <p class="advantages__info">машин</p>
                 </div>
                 <div class="advantages__right-footer">
@@ -398,7 +410,13 @@
             <div class="advantages__second-block">
               <div class="advantages__item advantages__item--left-element advantages__item--bottom advantages__item--left">
                 <div class="advantages__bottom-block">
-                  <img class="advantages__number-photo" src="img/icon-350.svg" width="102" height="53" alt="350">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/350-small-img.webp 1x, img/350-small-img@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/350-image.webp 1x, img/350-image@2x.webp 2x">
+
+                    <source media="(min-width: 320px)" srcset="img/350-small-img.jpg 1x, img/350-small-img@2x.jpg 2x">
+                    <img class="advantages__number-photo" src="img/350-image.jpg" srcset="img/350-image@2x.jpg" width="102" height="53" alt="350">
+                  </picture>
                   <p class="advantages__info">мест</p>
                 </div>
                 <div class="advantages__left-footer advantages__left-footer--mr-bottom">
@@ -408,7 +426,13 @@
               </div>
               <div class="advantages__item advantages__item--bottom advantages__item--right-element">
                 <div class="advantages__bottom-block">
-                    <img class="advantages__number-photo advantages__number-photo--two-num" src="img/icon-+5.svg" width="70" height="49" alt="+5">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/5+-small-img.webp 1x, img/5+-small-img@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/5+-image.webp 1x, img/5+-image@2x.webp 2x">
+
+                    <source media="(min-width: 320px)" srcset="img/5+-small-img.jpg 1x, img/5+-small-img@2x.jpg 2x">
+                    <img class="advantages__number-photo advantages__number-photo--two-num" src="img/5+-image.jpg" srcset="img/5+-image@2x.jpg" width="70" height="49" alt="+5">
+                  </picture>
                   <p class="advantages__info advantages__info--mr-mobail">лет</p>
                 </div>
                 <div class="advantages__right-footer">
@@ -575,8 +599,7 @@
 <script defer="" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script defer="" src="js/slick.min.js"></script>
 <script defer="" src="js/slider.min.js"></script>
-<script defer="" src="js/slider-reviews.min.js"></script>
-<!--<script src="js/picturefill.min.js"></script>-->
+<script src="js/picturefill.min.js"></script>
 <script defer="" src="js/svgxuse.min.js"></script>
 </body>
 </html>
