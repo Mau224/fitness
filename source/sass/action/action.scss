@@ -142,7 +142,7 @@
 
 .action__advantage-item {
   width: 550px;
-  border: 6px solid transparent;
+  border: 6px solid #ffffff;
   border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 
@@ -178,6 +178,9 @@
   .action__advantage-item {
     width: 313px;
     margin: 0;
+    border: 6px solid #ffffff;
+    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
   }
 
   .action__right-column {
@@ -240,6 +243,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 29px;
+    border: 6px solid transparent;
   }
 
   .action__item-header {

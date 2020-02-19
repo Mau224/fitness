@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 65px;
+  flex-wrap: wrap;
 }
 
 .games__info-block {
@@ -132,8 +133,8 @@
   align-items: center;
   color: #ffffff;
   margin-bottom: 53px;
-  margin-top: -3px;
-  margin-left: -19px;
+  margin-top: -1px;
+  margin-left: -21px;
 }
 
 .games__link {
@@ -167,6 +168,7 @@
 
 .games__picture {
   display: block;
+  height: 100%;
 }
 
 @media (max-width: $tablet-width) {
@@ -275,6 +277,7 @@
   }
 
   .games {
+    max-width: 320px;
     margin-bottom: 12px;
   }
 }

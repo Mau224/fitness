@@ -44,6 +44,7 @@
   font-style: normal;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -53,7 +54,12 @@ body {
   color: black;
   user-select: none;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
+//html {
+//  scroll-behavior: smooth;
+//}
 
 a {
   list-style: none;

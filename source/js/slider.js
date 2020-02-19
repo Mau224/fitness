@@ -32,5 +32,15 @@ $('.trainers__slider').slick({
 });
 
 $('.reviews__container').slick({
-  speed: 300
+  speed: 300,
+  variableWidth: false,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        variableWidth: true
+      },
+    }
+  ]
 });

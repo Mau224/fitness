@@ -18,6 +18,12 @@
   padding-right: 40px;
   color: #ffffff;
   margin-top: -6px;
+
+  &:hover,
+  &:active,
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .footer__social {
@@ -137,6 +143,7 @@
     padding-bottom: 15px;
     font-size: 16px;
     line-height: 19px;
+    margin-top: 3px;
 
     &--wrap {
       padding-bottom: 18px;
@@ -154,10 +161,12 @@
     width: 100%;
     justify-content: flex-start;
     margin-left: 35px;
+    margin-top: -19px;
+    padding-bottom: 3px;
   }
 
   .footer__icon {
-    margin-right: 33px;
+    margin-right: 35px;
 
     &--vk {
       width: 32px;

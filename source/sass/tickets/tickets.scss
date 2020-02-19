@@ -73,6 +73,7 @@
   width: auto;
   padding-left: 0;
   overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .tickets__day-item {
@@ -85,13 +86,14 @@
   width: 352px;
   border: 8px solid white;
 
-  &--active {
-    border: 8px solid transparent;
-    border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image-slice: 1;
-  }
+  //&--active {
+  //  border: 8px solid transparent;
+  //  border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  //  border-image-slice: 1;
+  //}
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 8px solid transparent;
     border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1;
@@ -169,10 +171,10 @@
   padding-left: 45px;
   padding-right: 40px;
 
-  &--active {
-    color: white;
-    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
-  }
+  //&--active {
+  //  color: white;
+  //  background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  //}
 }
 
 .tickets__item-icon {
@@ -290,10 +292,14 @@
     padding-left: 10px;
   }
 
+  .tickets {
+    width: 100%;
+  }
+
   .tickets__main-container {
+    width: 100%;
     margin-bottom: 68px;
     padding-bottom: 30px;
-    padding-right: 15px;
 
     &::before {
       width: 100%;
