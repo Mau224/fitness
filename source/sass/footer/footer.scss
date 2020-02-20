@@ -17,7 +17,7 @@
   align-items: center;
   padding-right: 40px;
   color: #ffffff;
-  margin-top: -6px;
+  margin-top: 0;
 
   &:hover,
   &:active,
@@ -66,10 +66,10 @@
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-top: -7px;
+  margin-top: -2px;
   margin-right: 279px;
   padding-left: -8px;
-  margin-left: -7px;
+  margin-left: -3px;
 }
 
 .footer__logo:hover {
@@ -93,8 +93,8 @@
 
 .footer__container {
   display: flex;
-  margin-right: 104px;
-  margin-left: 34px;
+  margin-right: 136px;
+  margin-left: 47px;
 }
 
 @media (max-width: $tablet-width) {

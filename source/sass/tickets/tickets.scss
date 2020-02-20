@@ -1,8 +1,9 @@
 .tickets__title {
   width: 225px;
   margin-bottom: 38px;
-  padding-top: 75px;
+  padding-top: 76px;
   font-size: 49px;
+  margin-left: 20px;
 }
 
 .tickets__container {
@@ -23,12 +24,15 @@
   /* or 30px */
   margin-right: 46px;
   color: rgba(16, 38, 84, 0.5);
-  margin-bottom: -2px;
+  margin-bottom: -3px;
+  padding-bottom: 10px;
 
-  &--active {
+  &:hover,
+  &:focus {
     color: #102654;
     border-bottom: 2px solid #d10a42;
-    padding-bottom: 11px;
+    outline: none;
+    padding-bottom: 8px;
   }
 }
 
@@ -63,12 +67,14 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding-left: 0;
   margin: 0;
+  margin-left: 15px;
 }
 
 .tickets__day-list {
   display: flex;
   margin: 0;
   margin-top: 39px;
+  margin-left: 17px;
   z-index: 20;
   width: auto;
   padding-left: 0;
@@ -149,6 +155,7 @@
   /* or 90px */
   color: #103aae;
   z-index: 1;
+  cursor: pointer;
   margin: -96px 0 36px 2px;
 }
 
@@ -192,7 +199,7 @@
 .tickets__background-circle {
   position: absolute;
   z-index: 10;
-  right: 2px;
+  right: 0;
   top: 508px;
 }
 
@@ -203,6 +210,7 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
+    margin-left: 0;
   }
 
   .tickets__day-list {
@@ -210,6 +218,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-left: 0;
   }
 
   .tickets__container {
@@ -220,6 +229,7 @@
 
   .tickets__month-list {
     justify-content: center;
+    margin-left: 0;
   }
 
   .tickets__month-item {

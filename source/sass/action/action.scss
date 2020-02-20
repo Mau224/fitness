@@ -11,9 +11,10 @@
 
 .action__title {
   text-align: center;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
   margin-top: 60px;
   font-size: 49px;
+  margin-left: 15px;
 }
 
 .action__sells-price {
@@ -35,8 +36,7 @@
   font-size: 18px;
   line-height: 140%;
   color: #ffffff;
-  margin: 0 auto;
-  margin-left: 48px;
+  margin: 1px auto 0 45px;
 }
 
 .action__link-block {
@@ -73,6 +73,7 @@
 
 .action__wrapper {
   display: flex;
+  margin-left: 20px;
 }
 
 .action__sells {
@@ -104,8 +105,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
-  margin-top: -50px;
   color: #1c3374;
+  margin-top: -53px;
   margin-left: 29px;
 }
 
@@ -121,8 +122,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1c3374;
-  margin-top: 69px;
-  margin-left: 31px;
+  margin-top: 70px;
+  margin-left: 29px;
   margin-bottom: 30px;
   border-bottom: 1px solid #1c3374;
 }
@@ -147,7 +148,7 @@
   border-image-slice: 1;
 
   &--top {
-    margin-bottom: 38px;
+    margin-bottom: 44px;
   }
 }
 
@@ -167,6 +168,7 @@
 @media (max-width: $tablet-width) {
   .action__wrapper {
     flex-direction: column;
+    margin-left: 0;
   }
 
   .action__advantage-block {
@@ -194,7 +196,8 @@
   .action__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 41px;
+    margin-bottom: 49px;
+    margin-left: 0;
   }
 
   .action__item-link {

@@ -113,7 +113,7 @@
 
 .advantages__item {
   display: flex;
-  margin-top: 36px;
+  margin-top: 34px;
   position: relative;
 
   &--left-element::before {
@@ -188,6 +188,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 49px;
+  margin-left: 15px;
 }
 
 .advantages__container {
@@ -291,6 +292,7 @@
 
   .advantages {
     margin-bottom: 7px;
+    margin-left: 0;
   }
 
   .advantages__text {

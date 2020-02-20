@@ -92,26 +92,26 @@
       <h1 class="tickets__title">Абонементы</h1>
       <div class="tickets__container">
         <ul class="tickets__month-list">
-          <li class="tickets__month-item tickets__month-item--active">1 месяц</li>
-          <li class="tickets__month-item">6 месяцев</li>
-          <li class="tickets__month-item">12 месяцев</li>
+          <li class="tickets__month-item tickets__month-item--active" tabindex="4">1 месяц</li>
+          <li class="tickets__month-item" tabindex="5">6 месяцев</li>
+          <li class="tickets__month-item" tabindex="6">12 месяцев</li>
         </ul>
         <ul class="tickets__day-list">
-          <li class="tickets__day-item" tabindex="4">
+          <li class="tickets__day-item">
             <p class="tickets__item-title">С тренером</p>
             <p class="tickets__item-info">12 занятий</p>
             <p class="tickets__item-background">5000</p>
             <p class="tickets__item-price">5000<svg class="tickets__item-icon" width="30" height="42"><use xlink:href="img/sprite.svg#icon-rub"></use></svg></p>
             <button type="button" class="tickets__link-subscription">купить абонемент</button>
           </li>
-          <li class="tickets__day-item tickets__day-item--active" tabindex="5">
+          <li class="tickets__day-item tickets__day-item--active">
             <p class="tickets__item-title">Дневной</p>
             <p class="tickets__item-info">с 8:00 до 17:00</p>
             <p class="tickets__item-background">1700</p>
             <p class="tickets__item-price">1700<svg class="tickets__item-icon" width="30" height="42"><use xlink:href="img/sprite.svg#icon-rub"></use></svg></p>
             <button type="button" class="tickets__link-subscription tickets__link-subscription--active">купить абонемент</button>
           </li>
-          <li class="tickets__day-item" tabindex="6">
+          <li class="tickets__day-item">
             <p class="tickets__item-title">Полный день</p>
             <p class="tickets__item-info">с 8:00 до 22:00</p>
             <p class="tickets__item-background">2700</p>
@@ -503,7 +503,10 @@
           </picture>
           <div class="reviews__text-block">
             <p class="reviews__header">Анна Орлова</p>
-            <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="reviews__text-container">
+            <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+              персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
         </li>
         <li class="reviews__slide">
@@ -516,7 +519,10 @@
           </picture>
           <div class="reviews__text-block">
             <p class="reviews__header">Анна Орлова</p>
-            <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="reviews__text-container">
+              <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
         </li>
       </ul>
