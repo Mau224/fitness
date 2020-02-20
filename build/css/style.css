@@ -460,8 +460,6 @@ h1 {
     z-index: 10;
     top: 78px;
     left: 146px; }
-  .gym__video-back:hover::before {
-    opacity: 0.5; }
   .gym__video-back::after {
     content: "";
     position: absolute;
@@ -535,13 +533,13 @@ h1 {
       width: 52px;
       height: 52px;
       top: 57px;
-      left: 110px; }
+      left: 105px; }
     .gym__video-back::after {
       border-top: 5px solid transparent;
       border-left: 10px solid #ffffff;
       border-bottom: 5px solid transparent;
       top: 77px;
-      left: 133px; }
+      left: 128px; }
   .gym__main-video {
     position: absolute;
     top: -89px;
@@ -2319,17 +2317,18 @@ h1 {
   .reviews__text {
     padding: 0 23px 32px;
     text-align: center;
-    width: 176px; }
+    width: 176px;
+    padding-right: 52px; }
   .reviews__header {
     width: 62px;
-    padding-left: 85px;
+    padding-left: 56px;
     margin-top: -22px;
     font-size: 20px;
     line-height: 130%;
     margin-bottom: 53px; }
   .reviews__icon {
     top: 42px;
-    left: 41px;
+    left: 53px;
     width: 68px;
     height: 68px; }
   .reviews__title {

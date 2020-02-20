@@ -35,14 +35,13 @@ $('.reviews__container').slick({
   speed: 300,
   variableWidth: false,
   adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        variableWidth: true
-      },
-    }
-  ]
+  // responsive: [
+  //   {
+  //     breakpoint: 767,
+  //     settings: {
+  //     },
+  //   }
+  // ]
 });
 
 $(document).ready(function () {
