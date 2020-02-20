@@ -460,6 +460,8 @@ h1 {
     z-index: 10;
     top: 78px;
     left: 146px; }
+  .gym__video-back:hover::before {
+    opacity: 0.5; }
   .gym__video-back::after {
     content: "";
     position: absolute;
@@ -529,23 +531,23 @@ h1 {
     left: -132px;
     width: 266px;
     height: 167px; }
+    .gym__video-back::before {
+      width: 52px;
+      height: 52px;
+      top: 57px;
+      left: 110px; }
+    .gym__video-back::after {
+      border-top: 5px solid transparent;
+      border-left: 10px solid #ffffff;
+      border-bottom: 5px solid transparent;
+      top: 77px;
+      left: 133px; }
   .gym__main-video {
     position: absolute;
     top: -89px;
     left: -132px;
     width: 266px;
-    height: 167px; }
-  .gym__video-wrapper::before {
-    width: 52px;
-    height: 52px;
-    top: -33px;
-    left: -27px; }
-  .gym__video-wrapper::after {
-    border-top: 5px solid transparent;
-    border-left: 10px solid #ffffff;
-    border-bottom: 5px solid transparent;
-    top: -11px;
-    left: -4px; } }
+    height: 167px; } }
 
 @media (max-width: 767px) {
   .gym__main-photo {
@@ -562,20 +564,20 @@ h1 {
     left: 0;
     height: 167px;
     margin-top: 35px; }
+    .gym__video-back::before {
+      top: 57px;
+      left: 135px;
+      z-index: 20; }
+    .gym__video-back::after {
+      top: 78px;
+      left: 158px;
+      z-index: 30; }
   .gym__main-video {
     position: relative;
     width: 100%;
     top: 0;
     left: 0;
     margin-top: 35px; }
-  .gym__video-wrapper::before {
-    top: 93px;
-    left: 134px;
-    z-index: 20; }
-  .gym__video-wrapper::after {
-    top: 113px;
-    left: 158px;
-    z-index: 30; }
   .gym__title-text {
     width: 258px;
     margin: 0;
@@ -2019,7 +2021,7 @@ h1 {
 
 .action__advantage-item {
   width: 550px;
-  border: 6px solid transparent;
+  border: 6px solid #ffffff;
   -o-border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
      border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1; }
@@ -2053,6 +2055,7 @@ h1 {
   .action__advantage-item {
     width: 313px;
     margin: 0;
+    border: 6px solid #ffffff;
     -o-border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
        border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1; }
@@ -2107,7 +2110,10 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 29px;
-    border: 6px solid transparent; }
+    border: 6px solid #ffffff;
+    -o-border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+       border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1; }
   .action__item-header {
     text-align: center;
     margin-left: 0;
