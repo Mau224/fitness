@@ -37,8 +37,8 @@ $('.trainers__slider').slick({
 
 $('.reviews__container').slick({
   speed: 300,
-  variableWidth: false,
-  adaptiveHeight: true,
+  variableWidth: true,
+  adaptiveHeight: false,
   responsive: [
     {
       breakpoint: 767,

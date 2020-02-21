@@ -920,8 +920,7 @@ h1 {
             flex-direction: column; }
   .advantages__center-column {
     padding: 0 40px;
-    margin: 126px 0 73px;
-    margin-bottom: 78px; }
+    margin: 131px 0 78px; }
   .advantages__title {
     font-size: 32px;
     line-height: 32px;
@@ -1518,7 +1517,7 @@ h1 {
     margin-left: -2px;
     margin-right: 45px; }
   .games__footer {
-    margin-bottom: -16px; }
+    margin-bottom: -19px; }
   .games__number-wrapper {
     margin-left: -2px; }
   .games__clock-wrapper {
@@ -2020,7 +2019,7 @@ h1 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1c3374;
-  margin-top: 70px;
+  margin-top: 73px;
   margin-left: 29px;
   margin-bottom: 30px;
   border-bottom: 1px solid #1c3374; }
@@ -2041,7 +2040,7 @@ h1 {
      border-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1; }
   .action__advantage-item--top {
-    margin-bottom: 44px; }
+    margin-bottom: 38px; }
 
 .action__right-column {
   margin-left: 40px; }
@@ -2197,28 +2196,31 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   line-height: 150%;
-  padding-left: 172px;
-  margin-top: -29px;
-  margin-bottom: 41px;
+  padding-left: 174px;
+  margin-top: -26px;
   color: #ffffff; }
 
 .reviews__text {
   width: 328px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 144%;
-  padding-left: 170px;
-  padding-right: 60px;
-  margin-top: -29px;
+  margin-top: -49px;
   color: #ffffff;
-  height: 100%; }
+  line-height: 144%;
+  padding-left: 174px;
+  padding-right: 60px;
+  padding-top: 60px;
+  /* height: 100%; */ }
+
+.reviews__container .slick-list {
+  background: #1c3374; }
 
 .reviews__icon {
   position: relative;
-  top: 62px;
-  left: 63px; }
+  top: 65px;
+  left: 69px; }
 
 .reviews {
   width: 100%;
@@ -2242,7 +2244,6 @@ h1 {
   padding-right: 60px; }
 
 .reviews__slide {
-  background: #1c3374;
   background-size: cover;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
           box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
@@ -2251,7 +2252,7 @@ h1 {
 
 .reviews__text-block {
   height: 100%;
-  padding-bottom: 60px; }
+  padding-bottom: 55px; }
 
 .reviews__btn {
   cursor: pointer;
@@ -2297,8 +2298,8 @@ h1 {
   background-repeat: no-repeat; }
 
 .reviews__container .slick-arrow.slick-next {
-  right: -35px;
-  top: 103px;
+  right: -40px;
+  top: 105px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat; }
 
@@ -2309,21 +2310,23 @@ h1 {
   .reviews__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 43px;
+    margin-bottom: 38px;
+    margin-top: 42px;
     margin-left: 0; }
+  .reviews__header {
+    padding-left: 174px; }
   .reviews__container .slick-arrow.slick-next {
-    right: -16px;
-    top: 103px; }
+    right: -38px;
+    top: 105px; }
   .reviews__container .slick-arrow.slick-prev {
-    left: -15px;
-    top: 102px; }
+    left: -39px;
+    top: 106px; }
   .reviews__text {
-    padding-right: 64px; }
+    padding-right: 64px;
+    padding-left: 173px; }
   .reviews {
     margin-bottom: 79px;
-    margin-left: 0; }
-  .reviews__container {
-    max-width: 768px; } }
+    margin-left: 0; } }
 
 @media (max-width: 767px) {
   .reviews__text-block {
@@ -2336,7 +2339,8 @@ h1 {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-bottom: 0; }
   .reviews__arrow {
     position: relative; }
   .reviews__container {
@@ -2354,7 +2358,7 @@ h1 {
     margin-top: -22px;
     font-size: 20px;
     line-height: 130%;
-    margin-bottom: 53px; }
+    margin-bottom: 74px; }
   .reviews__icon {
     top: 42px;
     left: 53px;
@@ -2362,7 +2366,8 @@ h1 {
     height: 68px; }
   .reviews__title {
     font-size: 32px;
-    line-height: 32px; }
+    line-height: 32px;
+    margin-top: 28px; }
   .reviews {
     margin-bottom: 54px; }
   .reviews__slide {
@@ -2556,7 +2561,7 @@ h1 {
 .contact__info-title {
   padding-left: 120px;
   padding-top: 29px;
-  padding-bottom: 3px;
+  padding-bottom: 0;
   font-size: 49px; }
 
 .contact__first-block {
@@ -2679,11 +2684,8 @@ h1 {
   .contact__info-title {
     font-size: 32px;
     line-height: 32px;
-    margin-right: 0;
-    margin-left: -176px;
     padding-left: 1px;
-    margin-top: 40px;
-    margin-bottom: 29px; }
+    margin: 40px 0 34px -176px; }
   .contact__info-block {
     -webkit-box-align: center;
         -ms-flex-align: center;
