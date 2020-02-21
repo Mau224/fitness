@@ -1,5 +1,9 @@
 'use strict';
 
+$(function () {
+  $("#phone").mask("8(999) 999-99-99");
+});
+
 $('.trainers__slider').slick({
   dots: false,
   infinite: true,
@@ -46,6 +50,7 @@ $('.reviews__container').slick({
 });
 
 $(document).ready(function () {
+
   $('[name=phone_name]').bind('change keyup input click', function () {
     if (this.value.match(/[^0-9]/g)) {
       this.value = this.value.replace(/[^0-9]/g, '');
