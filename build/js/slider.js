@@ -1,9 +1,7 @@
 'use strict';
 
-$('#phone').mask('8 (999) 999-99-99').on('click', function () {
-  if ($(this).val() === '_ (___) ___-__-__') {
-    $(this).get(0).setSelectionRange(0, 0);
-  }
+$(function () {
+  $('#phone').mask('8(999) 999-99-99');
 });
 
 $('.trainers__slider').slick({

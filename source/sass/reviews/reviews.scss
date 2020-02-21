@@ -33,8 +33,7 @@
   padding-right: 60px;
   margin-top: -29px;
   color: #ffffff;
-  height: 111px;
-  overflow: auto;
+  padding-bottom: 60px;
 }
 
 .reviews__icon {
@@ -68,12 +67,6 @@
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   width: 560px;
   left: 0;
-  max-height: 242px;
-  height: 100%;
-}
-
-.reviews__text-container {
-  padding-bottom: 60px;
 }
 
 .reviews__btn {
@@ -258,12 +251,6 @@
     width: 176px;
     line-height: 140%;
     padding: 0 55px 32px 23px;
-    height: 190px;
-    overflow: auto;
-  }
-
-  .reviews__text-container {
-    padding-bottom: 40px;
   }
 
   .reviews__header {
@@ -295,7 +282,6 @@
     width: 226px;
     margin-left: 15px;
     margin-right: 15px;
-    max-height: 335px;
   }
 
   .slick-slide {
