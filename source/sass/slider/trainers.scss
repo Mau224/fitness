@@ -167,6 +167,10 @@
   min-width: 0;
 }
 
+.slick-slide {
+  height: 100%;
+}
+
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -177,6 +181,7 @@
   display: flex;
   align-items: flex-start;
 }
+
 
 /* Конкретный слайдер */
 .trainers__slider {

@@ -1714,6 +1714,9 @@ h1 {
 .slick-slider {
   min-width: 0; }
 
+.slick-slide {
+  height: 100%; }
+
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden; }
@@ -2210,7 +2213,7 @@ h1 {
   padding-right: 60px;
   margin-top: -29px;
   color: #ffffff;
-  padding-bottom: 60px; }
+  height: 100%; }
 
 .reviews__icon {
   position: relative;
@@ -2233,7 +2236,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   padding: 0;
   list-style: none;
   padding-left: 60px;
@@ -2241,10 +2243,15 @@ h1 {
 
 .reviews__slide {
   background: #1c3374;
+  background-size: cover;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
           box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   width: 560px;
   left: 0; }
+
+.reviews__text-block {
+  height: 100%;
+  padding-bottom: 60px; }
 
 .reviews__btn {
   cursor: pointer;
