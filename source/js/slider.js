@@ -39,7 +39,7 @@ $('.reviews__container').slick({
     {
       breakpoint: 767,
       settings: {
-        variableWidth: true,
+        variableWidth: false,
       },
     }
   ]

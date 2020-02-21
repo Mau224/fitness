@@ -2,35 +2,35 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto Condensed";
   src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
   font-weight: 300;
   font-style: normal; }
 
@@ -38,7 +38,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-display: optional;
+  font-display: swap;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background: white;
   color: black;
@@ -846,7 +846,7 @@ h1 {
     margin-bottom: 12px; }
   .advantages__center-column {
     padding: 0 100px 0;
-    margin: 129px 164px 72px; }
+    margin: 125px 164px 72px; }
   .advantages__first-block {
     margin-top: -75px;
     z-index: 20;
@@ -910,7 +910,8 @@ h1 {
     display: block;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 9px; }
+    margin-bottom: 9px;
+    padding-top: 23px; }
   .advantages__second-block {
     padding-bottom: 27px;
     -webkit-box-orient: vertical;
@@ -1363,10 +1364,7 @@ h1 {
   line-height: 150%;
   border-bottom: 2px solid white;
   /* or 27px */
-  margin: 0;
-  margin-left: 10px;
-  margin-top: -5px;
-  margin-bottom: 6px;
+  margin: -2px 0 6px 10px;
   color: #ffffff; }
 
 .games__date-number {
@@ -1439,7 +1437,7 @@ h1 {
   color: #ffffff;
   margin-bottom: 53px;
   margin-top: -1px;
-  margin-left: -21px; }
+  margin-left: -20px; }
 
 .games__link {
   width: 100%;
@@ -1576,7 +1574,7 @@ h1 {
 
 .trainers__title {
   width: 151px;
-  margin-top: 57px;
+  margin-top: 60px;
   margin-bottom: 50px;
   font-size: 49px;
   margin-left: 23px; }
@@ -2081,7 +2079,7 @@ h1 {
   .action__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 49px;
+    margin-bottom: 42px;
     margin-left: 0; }
   .action__item-link {
     margin-bottom: 28px; }
@@ -2196,7 +2194,7 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   line-height: 150%;
-  padding-left: 176px;
+  padding-left: 172px;
   margin-top: -29px;
   margin-bottom: 41px;
   color: #ffffff; }
@@ -2207,18 +2205,18 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 140%;
-  padding-left: 175px;
+  line-height: 144%;
+  padding-left: 170px;
   padding-right: 60px;
   margin-top: -29px;
   color: #ffffff;
-  height: 90px;
+  height: 111px;
   overflow: auto; }
 
 .reviews__icon {
   position: relative;
-  top: 61px;
-  left: 67px; }
+  top: 62px;
+  left: 63px; }
 
 .reviews {
   width: 100%;
@@ -2345,12 +2343,14 @@ h1 {
     max-width: 266px;
     padding: 0 20px; }
   .reviews__text {
-    padding: 0 23px 32px;
     text-align: center;
     width: 176px;
-    padding-right: 52px;
+    line-height: 140%;
+    padding: 0 55px 32px 23px;
     height: 190px;
     overflow: auto; }
+  .reviews__text-container {
+    padding-bottom: 40px; }
   .reviews__header {
     width: 62px;
     padding-left: 56px;
@@ -2372,7 +2372,7 @@ h1 {
     width: 226px;
     margin-left: 15px;
     margin-right: 15px;
-    max-height: 320px; }
+    max-height: 335px; }
   .slick-slide {
     width: 226px; }
   .reviews__container .slick-arrow.slick-next {
@@ -2625,7 +2625,8 @@ h1 {
     font-size: 42px;
     line-height: 42px;
     margin-left: 14px;
-    margin-top: 39px; }
+    margin-top: 42px;
+    margin-bottom: 29px; }
   .contact__info-header {
     font-size: 20px;
     line-height: 150%;
@@ -2685,7 +2686,8 @@ h1 {
     margin-right: 0;
     margin-left: -176px;
     padding-left: 1px;
-    margin-bottom: 35px; }
+    margin-top: 40px;
+    margin-bottom: 29px; }
   .contact__info-block {
     -webkit-box-align: center;
         -ms-flex-align: center;
