@@ -9,7 +9,7 @@ $('.trainers__slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 4,
-  adaptiveHeight: true,
+  adaptiveHeight: false,
   slidesToScroll: 4,
   variableWidth: false,
   responsive: [

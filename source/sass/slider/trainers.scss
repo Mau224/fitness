@@ -185,6 +185,10 @@
 
 /* Конкретный слайдер */
 .trainers__slider {
+  display: flex;
+}
+
+.trainers__slider-wrapper {
   width: 100%;
   max-width: 1320px;
   position: relative;
@@ -205,11 +209,11 @@
 
 .trainers__slider .slick-arrow.slick-prev {
   left: 0;
-  padding-right: 87px;
+  padding-right: 93px;
   top: 129px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
-  background-position-x: 31px;
+  background-position-x: 30px;
 
   //&::before {
   //  content: "";
@@ -277,8 +281,20 @@
 
 .trainers__slider-item {
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
   margin-right: 18px;
+  //margin-left: 10px;
+  margin-left: 2px;
 }
+
+.trainers__slider-item:first-child {
+  margin-left: 0px;
+}
+
+//.trainers__slider-item:last-child {
+//  margin-left: 20px;
+//}
 
 .trainers__slider-item img {
   max-width: 100%;
