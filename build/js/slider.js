@@ -6,7 +6,7 @@ $(function () {
 
 $('.trainers__slider').slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToShow: 4,
   adaptiveHeight: false,

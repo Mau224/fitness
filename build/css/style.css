@@ -1775,11 +1775,11 @@ h1 {
 
 .trainers__slider .slick-arrow.slick-prev {
   left: 0;
-  padding-right: 98px;
+  padding-right: 97px;
   top: 129px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
-  background-position-x: 46px; }
+  background-position-x: 44px; }
 
 .trainers__slider .slick-arrow.slick-next {
   right: 0;
@@ -1787,7 +1787,7 @@ h1 {
   padding-left: 50px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
-  background-position-x: 18px; }
+  background-position-x: 15px; }
 
 .trainers__slider.slick-arrow.slick-disabled {
   opacity: 0.5; }
@@ -1803,7 +1803,8 @@ h1 {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-left: 3px; }
 
 .trainers__slider-item img {
   max-width: 100%; }
