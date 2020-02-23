@@ -41,7 +41,7 @@
 .games__info-block {
   display: flex;
   flex-direction: column;
-  margin-top: 87px;
+  margin-top: 89px;
   margin-left: 36px;
 }
 
@@ -61,11 +61,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 150%;
-  border-bottom: 2px solid white;
-  /* or 27px */
-  margin: -2px 0 6px 10px;
   color: #ffffff;
+  line-height: 150%;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #ffffff;
+  margin: -7px 0 3px 10px;
 }
 
 .games__date-number {
@@ -195,8 +195,11 @@
 
   .games__date {
     font-size: 12px;
-    margin-left: 0;
+    margin-left: -2px;
     width: 40px;
+    padding-bottom: 1px;
+    margin-top: -4px;
+    margin-bottom: 5px;
   }
 
   .games__date-number {
@@ -239,7 +242,7 @@
   }
 
   .games__info-block {
-    margin-top: 53px;
+    margin-top: 51px;
     margin-left: -2px;
     margin-right: 45px;
   }
@@ -278,5 +281,17 @@
   .games {
     max-width: 320px;
     margin-bottom: 12px;
+  }
+
+  .games__title {
+    margin-top: 44px;
+  }
+
+  .games__info-block {
+    margin-top: 49px;
+  }
+
+  .games__footer {
+    margin-bottom: -15px;
   }
 }

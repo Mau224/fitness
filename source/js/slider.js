@@ -11,7 +11,7 @@ $('.trainers__slider').slick({
   slidesToShow: 4,
   adaptiveHeight: true,
   slidesToScroll: 4,
-  variableWidth: true,
+  variableWidth: false,
   responsive: [
     {
       breakpoint: 1199,

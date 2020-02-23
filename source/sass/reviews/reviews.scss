@@ -2,6 +2,7 @@
   text-align: center;
   margin-bottom: 54px;
   font-size: 49px;
+  margin-left: 19px;
 }
 
 .reviews__block-slide {
@@ -13,11 +14,12 @@
 .reviews__header {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  padding-left: 174px;
-  margin-top: -26px;
+  margin-bottom: 2px;
+  padding-left: 172px;
+  margin-top: -29px;
   color: #ffffff;
 }
 
@@ -27,11 +29,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-top: -49px;
   color: #ffffff;
   line-height: 144%;
-  padding-left: 174px;
-  padding-right: 60px;
+  padding-left: 172px;
+  margin-top: -53px;
+  padding-right: 58px;
   padding-top: 60px;
   /* height: 100%; */
 }
@@ -42,27 +44,24 @@
 
 .reviews__icon {
   position: relative;
-  top: 65px;
-  left: 69px;
+  top: 62px;
+  left: 66px;
 }
 
 .reviews {
   width: 100%;
   position: relative;
   margin-bottom: 100px;
-  margin-left: 15px;
 }
 
 .reviews__container {
-  max-width: 598px;
+  max-width: 563px;
   position: relative;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding: 0;
   list-style: none;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px 0 77px;
 }
 
 .reviews__slide {
@@ -173,7 +172,7 @@
 //}
 
 .reviews__container .slick-arrow {
-  position: relative;
+  position: absolute;
   top: 50%;
   z-index: 10;
   font-size: 0;
@@ -183,14 +182,14 @@
 }
 
 .reviews__container .slick-arrow.slick-prev {
-  left: -38px;
+  left: 21px;
   top: 102px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
 }
 
 .reviews__container .slick-arrow.slick-next {
-  right: -40px;
+  right: -27px;
   top: 105px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
@@ -210,32 +209,43 @@
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 38px;
-    margin-top: 42px;
+    margin-top: 38px;
     margin-left: 0;
   }
 
   .reviews__header {
-    padding-left: 174px;
+    padding-left: 172px;
+    margin-bottom: 0;
   }
 
   .reviews__container .slick-arrow.slick-next {
-    right: -38px;
+    right: -30px;
     top: 105px;
   }
 
   .reviews__container .slick-arrow.slick-prev {
-    left: -39px;
+    left: 0;
     top: 106px;
   }
 
   .reviews__text {
     padding-right: 64px;
     padding-left: 173px;
+    margin-top: -48px;
   }
 
   .reviews {
     margin-bottom: 79px;
     margin-left: 0;
+  }
+
+  .reviews__container {
+    padding: 0 60px 0 60px;
+  }
+
+  .reviews__icon {
+    top: 63px;
+    left: 63px;
   }
 }
 
@@ -253,7 +263,7 @@
 
   .reviews__container {
     width: 100%;
-    max-width: 266px;
+    max-width: 228px;
     padding: 0 20px;
   }
 
@@ -261,7 +271,8 @@
     text-align: center;
     width: 176px;
     line-height: 140%;
-    padding: 0 55px 32px 23px;
+    margin-top: -51px;
+    padding: 0 55px 34px 23px;
   }
 
   .reviews__header {
@@ -284,6 +295,7 @@
     font-size: 32px;
     line-height: 32px;
     margin-top: 28px;
+    margin-bottom: 42px;
   }
 
   .reviews {
@@ -301,7 +313,7 @@
   }
 
   .reviews__container .slick-arrow.slick-next {
-    right: -20px;
+    right: -51px;
     top: 157px;
     background: url("../img/right-arrow-mobail.svg");
     background-repeat: no-repeat;
