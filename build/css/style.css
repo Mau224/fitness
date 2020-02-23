@@ -1756,7 +1756,7 @@ h1 {
 
 .trainers__slider-wrapper {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1340px;
   position: relative;
   padding-top: 5px;
   margin: 0 auto;
@@ -1775,11 +1775,11 @@ h1 {
 
 .trainers__slider .slick-arrow.slick-prev {
   left: 0;
-  padding-right: 93px;
+  padding-right: 98px;
   top: 129px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
-  background-position-x: 30px; }
+  background-position-x: 46px; }
 
 .trainers__slider .slick-arrow.slick-next {
   right: 0;
@@ -1787,7 +1787,7 @@ h1 {
   padding-left: 50px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
-  background-position-x: 25px; }
+  background-position-x: 18px; }
 
 .trainers__slider.slick-arrow.slick-disabled {
   opacity: 0.5; }
@@ -1801,24 +1801,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 18px;
-  margin-left: 2px; }
-
-.trainers__slider-item:first-child {
-  margin-left: 0px; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .trainers__slider-item img {
   max-width: 100%; }
 
 @media (max-width: 1199px) {
-  .trainers__slider {
+  .trainers__slider-wrapper {
     width: 100%;
     max-width: 610px;
     padding-top: 0;
-    padding-right: 16px; }
+    padding-right: 15px; }
   .trainers__block-text {
     margin-bottom: 14px; }
   .trainers__slider-item {
@@ -1893,10 +1888,11 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .trainers__slider {
+  .trainers__slider-wrapper {
     width: 100%;
     max-width: 300px;
-    padding-left: 10px; }
+    padding-left: 4px;
+    padding-right: 0; }
   .trainers__block-content {
     width: 226px;
     height: 275px;
@@ -1938,7 +1934,7 @@ h1 {
     background: url("../img/left-arrow-mobail.svg");
     background-repeat: no-repeat; }
   .trainers__slider .slick-arrow.slick-next {
-    right: -34px;
+    right: 1px;
     top: 129px;
     background: url("../img/right-arrow-mobail.svg");
     background-repeat: no-repeat; }
