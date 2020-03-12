@@ -59,8 +59,11 @@
   cursor: pointer;
   position: relative;
   top: -325px;
-  width: 260px;
+  //width: 258px;
   height: 294px;
+  margin-left: 6px;
+  width: calc(100% - 10px);
+  margin-right: 5px;
 }
 
 .trainers__block-content:hover {
@@ -209,7 +212,7 @@
 
 .trainers__slider .slick-arrow.slick-prev {
   left: 0;
-  padding-right: 97px;
+  padding-right: 81px;
   top: 129px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
@@ -244,6 +247,12 @@
 
 .trainers__slider-item img {
   max-width: 100%;
+}
+
+.trainers__slider img {
+  width: calc(100% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
