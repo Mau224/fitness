@@ -186,6 +186,11 @@
   top: 102px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .reviews__container .slick-arrow.slick-next {
@@ -193,6 +198,11 @@
   top: 105px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .reviews__container .slick-slide {

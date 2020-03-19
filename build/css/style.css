@@ -114,6 +114,8 @@ h1 {
   letter-spacing: 0.03em;
   font-weight: bold;
   padding-right: 87px;
+  padding-bottom: 4px;
+  margin-top: -4px;
   color: #ffffff; }
 
 .main-nav__phone:hover {
@@ -223,7 +225,8 @@ h1 {
   padding: 24px;
   padding-left: 0;
   padding-right: 0;
-  margin-left: 63px; }
+  margin-left: 63px;
+  overflow: hidden; }
 
 .header-information__subscription:hover {
   color: #eecccc; }
@@ -307,8 +310,9 @@ h1 {
           align-items: center;
   text-align: right;
   text-transform: uppercase;
+  color: #ffffff;
   padding-bottom: 24px;
-  color: #ffffff; }
+  padding-left: 12px; }
 
 .main-header__social-link:hover {
   color: #eecccc; }
@@ -339,7 +343,7 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-left: 190px;
+  margin-left: 180px;
   margin-bottom: 72px; }
 
 .main-header__photo-trainer {
@@ -431,6 +435,8 @@ h1 {
     left: 121px;
     background: url("../img/background-border.svg");
     background-repeat: no-repeat; }
+    .gym__photo-wrapper::before:hover::before {
+      opacity: 0.1; }
 
 .gym__main-video {
   position: absolute;
@@ -450,18 +456,6 @@ h1 {
   width: 364px;
   height: 228px;
   background: rgba(20, 54, 122, 0.5); }
-  .gym__video-back:hover, .gym__video-back:active, .gym__video-back:disabled {
-    opacity: 0.5; }
-  .gym__video-back::before {
-    content: "";
-    position: absolute;
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-    border-radius: 50px;
-    z-index: 10;
-    top: 78px;
-    left: 146px; }
   .gym__video-back::after {
     content: "";
     position: absolute;
@@ -1032,7 +1026,8 @@ h1 {
   margin-right: 46px;
   color: rgba(16, 38, 84, 0.5);
   margin-bottom: -3px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  cursor: pointer; }
   .tickets__month-item:hover, .tickets__month-item:focus {
     color: #102654;
     border-bottom: 2px solid #d10a42;
@@ -1095,7 +1090,7 @@ h1 {
 
 .tickets__day-item {
   background-color: white;
-  margin-right: 30px;
+  margin-right: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1781,7 +1776,10 @@ h1 {
   top: 129px;
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
-  background-position-x: 44px; }
+  background-position-x: 44px;
+  cursor: pointer; }
+  .trainers__slider .slick-arrow.slick-prev:hover {
+    opacity: 0.9; }
 
 .trainers__slider .slick-arrow.slick-next {
   right: 0;
@@ -1789,7 +1787,10 @@ h1 {
   padding-left: 50px;
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
-  background-position-x: 15px; }
+  background-position-x: 15px;
+  cursor: pointer; }
+  .trainers__slider .slick-arrow.slick-next:hover {
+    opacity: 0.9; }
 
 .trainers__slider.slick-arrow.slick-disabled {
   opacity: 0.5; }
@@ -2353,13 +2354,19 @@ h1 {
   left: 21px;
   top: 102px;
   background: url("../img/icon-left.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  .reviews__container .slick-arrow.slick-prev:hover {
+    opacity: 0.9; }
 
 .reviews__container .slick-arrow.slick-next {
   right: -27px;
   top: 105px;
   background: url("../img/icon-right.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  .reviews__container .slick-arrow.slick-next:hover {
+    opacity: 0.9; }
 
 .reviews__container .slick-slide {
   height: 100%; }
@@ -2844,15 +2851,6 @@ h1 {
   margin-right: 279px;
   padding-left: -8px;
   margin-left: -3px; }
-
-.footer__logo:hover {
-  opacity: 0.3; }
-
-.footer__logo:active {
-  opacity: 0.3; }
-
-.footer__logo:disabled {
-  opacity: 0.5; }
 
 .footer {
   width: 100%;

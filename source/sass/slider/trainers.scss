@@ -217,6 +217,11 @@
   background: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   background-position-x: 44px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .trainers__slider .slick-arrow.slick-next {
@@ -226,6 +231,11 @@
   background: url("../img/icon-right.svg");
   background-repeat: no-repeat;
   background-position-x: 15px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .trainers__slider.slick-arrow.slick-disabled {

@@ -64,6 +64,10 @@
     left: 121px;
     background: url("../img/background-border.svg");
     background-repeat: no-repeat;
+
+    &:hover::before {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -114,23 +118,12 @@
   height: 228px;
   background: rgba(20, 54, 122, 0.5);
 
-  &:hover,
-  &:active,
-  &:disabled {
-    opacity: 0.5;
-  }
+  //&:hover,
+  //&:active,
+  //&:disabled {
+  //  opacity: 0.5;
+  //}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
-    border-radius: 50px;
-    z-index: 10;
-    top: 78px;
-    left: 146px;
-  }
 
   &::after {
     content: "";

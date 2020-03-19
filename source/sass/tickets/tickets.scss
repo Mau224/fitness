@@ -26,6 +26,7 @@
   color: rgba(16, 38, 84, 0.5);
   margin-bottom: -3px;
   padding-bottom: 10px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -84,7 +85,7 @@
 
 .tickets__day-item {
   background-color: white;
-  margin-right: 30px;
+  margin-right: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
